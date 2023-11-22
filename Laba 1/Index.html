@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laba 1</title>
+</head>
+<body>
+  <h1>Завдання до лабораторної №1</h1>
+  <ul>
+    <li><button onclick="runScript('burger.js')">Кількість бургерів і здача</button></li>
+    <li><button onclick="runScript('rearrange.js')">Перестановка цифр у числі</button></li>
+    <li><button onclick="runScript('date.js')">Попередня та наступна дата</button></li>
+    <li><button onclick="runScript('age.js')">Рядок-опис віку</button></li>
+    <li><button onclick="runScript('calculator.js')">Зациклення калькулятора</button></li>
+    <li><button onclick="runScript('sum.js')">Сума чисел до введення 0</button></li>
+    <li><button onclick="runScript('power.js')">Зведення до ступеня другої цифри</button></li>
+  </ul>
+  <script>
+    function runScript(scriptName) {
+      const script = document.createElement('script');
+      script.src = scriptName;
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
