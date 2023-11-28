@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Function</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    function createTable(...rows) {
+        document.write('<table>');
+        rows.forEach(row => {
+            document.write('<tr>');
+            document.write(`<td>${row}</td>`);
+            document.write('</tr>');
+        });
+        document.write('</table>');
+    }
+
+    createTable("Row 1", "Row 2", "Row 3");
+</script>
+
+</body>
+</html>
